@@ -20,7 +20,7 @@ export default function ChatRoom({ roomId = "thread-42" }) {
         {messages.length === 0 && <li className="empty">No messages yet. Say hello.</li>}
         {messages.map((m) => (
           <li key={m.id}>
-            <b>{m.user}:</b> {m.text}
+            <b>{m.user.name}:</b> {m.text}
           </li>
         ))}
       </ul>
